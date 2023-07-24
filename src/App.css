@@ -1,6 +1,6 @@
 .bg-container{
  display: flex;
- flex-direction: column;
+ 
  justify-content: center;
  align-items: center;
  height: 100vh;
@@ -9,10 +9,16 @@
   text-align: center;
   background-color: #0af781;
   background-size: cover;
-  width: 30vw;
+ 
+  flex-direction: row; 
   padding: 10px;
   border-radius: 20px;
-
+  
+}
+@media screen and (min-width: 450px){
+  calculator-container{
+    width: 30vw;
+  }
 }
 input{
   height: 80px;
